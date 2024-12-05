@@ -28,5 +28,9 @@
 - build
 - authentication - get started
 - email/password
+
   - do signup user by creating a user.
   - using createUserWithEmailAndPassword method available in "firebase/auth";
+
+- signIn user
+  - import { getAuth, signInWithEmailAndPassword } from "firebase/auth";

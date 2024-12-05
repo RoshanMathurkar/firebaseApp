@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import { app } from "./firebase";
+import { app, auth } from "./firebase";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import SignupPage from "./pages/Signup";
+import SignInPage from "./pages/Signin";
 
-const auth = getAuth();
+// const auth = getAuth();
 
 function App() {
   const signUpUser = () => {
@@ -19,6 +20,7 @@ function App() {
       <h1>Firebase App</h1>
       {/* <button onClick={signUpUser}>Create user</button> */}
       <SignupPage />
+      <SignInPage />
     </>
   );
 }

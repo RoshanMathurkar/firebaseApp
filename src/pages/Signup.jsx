@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { app } from "../firebase";
+import { app, auth } from "../firebase";
 
-const auth = getAuth(app);
 
 const SignupPage = () => {
   const [email, setEmail] = useState("");
@@ -18,6 +17,7 @@ const SignupPage = () => {
 
   return (
     <div className="singuppage">
+      <h1>Singup Page</h1>
       <label>Email</label>
       <br />
       <input
